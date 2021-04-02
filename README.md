@@ -121,11 +121,11 @@ def like(request, review_pk):
 
 **로그인 하기 전**
 
-<img src="README.assets/image-20210402162959294.png" alt="image-20210402162959294" style="zoom:80%;"/>
+![image-20210402171336500](README.assets/image-20210402171336500.png)
 
 **로그인 후**
 
-![image-20210402163151776](README.assets/image-20210402163151776.png)
+![image-20210402171357965](README.assets/image-20210402171357965.png)
 
 - 작성자 - 프로필로 이동 / 글제목 - detail로 이동
 
