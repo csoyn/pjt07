@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>INDEX PAGE</h1>
+  <hr>
+    <table class="table table-striped ">
+  <tbody>
+    {% for review in reviews %}
+    <tr>
+      <th scope="row">{{ review.id}}</th>
+      <td><a href="{% url 'accounts:profile' review.user.pk %}" class = "text-decoration-none text-success" >{{ review.user.username}} </a></td>
+      <td><a href="{% url 'community:detail' review.pk %}" class = "text-decoration-none text-info" >{{ review.title }}</a></td>
+      <td>{{ review.movie_title}}</td>
+      {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

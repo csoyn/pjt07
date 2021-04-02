@@ -1,0 +1,4 @@
+venv/
+__pacache__/
+*.sqlite3
+.vscode/

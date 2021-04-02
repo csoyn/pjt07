@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+  <h1>LOGIN PAGE</h1>
+  <hr>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <input type="submit" class = 'btn btn-outline-primary mt-1' value='LOGIN' >
+  </form>
+  <hr>
+  <a href="{% url 'community:index' %}" class = "text-decoration-none text-success"  >BACK</a>
+{% endblock %}
